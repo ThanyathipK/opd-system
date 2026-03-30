@@ -67,6 +67,14 @@ uvicorn api.main:app --reload --port 8000
 ```
 API docs available at: http://localhost:8000/docs
 
+If it still says 3.13, your venv was created with the wrong Python. Recreate it:
+bashdeactivate
+rm -rf venv
+python3.12 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn api.main:app --reload --port 8000
+
 ### Step 4 — Start the dashboard (Team B)
 Open a new terminal:
 ```bash
