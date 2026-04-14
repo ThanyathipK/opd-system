@@ -36,7 +36,7 @@ opd_system/
 
 ```bash
 # 1. Clone and enter project
-cd opd_system
+cd opd-system
 
 # 2. Create virtual environment
 python -m venv venv
